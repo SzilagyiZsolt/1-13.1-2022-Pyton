@@ -10,6 +10,12 @@ for x in xs:
         Kalóz.right(x)
 összeg=0
 for x in xs:
+    if -360<x<360:
+        x
+    else:
+        while -360<x<360:
+            x
+        else:
     összeg=összeg+x
 print(f"Jelenleg {összeg} fokban áll a hajó")
 kép.mainloop()

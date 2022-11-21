@@ -1,6 +1,6 @@
 T=[0, 1, 2, 3, 4, 5, 6]
-Mikor=int(input("hányas számú napon indultál "))
-Mennyi=int(input("hány napig voltál távol "))
+Mikor=int(input("hányas számú napon indultál? "))
+Mennyi=int(input("hány napig voltál távol? "))
 while Mennyi>7:
     Mennyi=Mennyi-7
 Mennyi=Mennyi+Mikor
@@ -19,4 +19,4 @@ for x in T:
         Mennyi="Szombat"
     elif Mennyi==6:
         Mennyi="Vasárnap"
-print(Mennyi)
+print(f"Ezen a napon térsz haza: {Mennyi}")

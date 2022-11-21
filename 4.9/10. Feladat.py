@@ -15,3 +15,5 @@ def csillag(t):
         t.pendown()
 csillag(Sanyi)
 kép.mainloop()
+
+#Ha nem emelem fel a tollat, akkor egy nagy csillagot kapok

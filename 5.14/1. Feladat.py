@@ -16,6 +16,6 @@ def nap(Mennyi):
             Mennyi="Szombat"
         elif Mennyi==6:
             Mennyi="Vasárnap"
-    print(Mennyi)
+    print(f"A kiválasztott napod: {Mennyi}")
 nap(Mennyi)
 

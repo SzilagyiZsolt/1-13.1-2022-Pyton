@@ -19,4 +19,4 @@ for x in T:
         Mennyi="Szombat"
     elif Mennyi==6:
         Mennyi="Vasárnap"
-print(f"Ezen a napon térsz haza: {Mennyi}")
+print("Ezen a napon térsz haza: ", Mennyi)

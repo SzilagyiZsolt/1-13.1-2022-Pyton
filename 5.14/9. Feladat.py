@@ -2,7 +2,6 @@ import turtle
 kép=turtle.Screen()
 def rajzolj_oszlopot(t, magassag):
     t.begin_fill()
-    
     t.left(90)
     t.forward(magassag)
     if magassag>0:    

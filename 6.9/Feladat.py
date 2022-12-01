@@ -29,11 +29,9 @@ def fordulj_orajarasi_iranyba(ég):
         print("D")
         return ég
     elif ég==int:
-        teszt(fordulj_orajarasi_iranyba(ég) == None)
-        return ég
-teszt(fordulj_orajarasi_iranyba(n) == n) 
-teszt(fordulj_orajarasi_iranyba(n) != n)
-
+        ég == None
+if 
+teszt(fordulj_orajarasi_iranyba(n) == n)
 
 #2. Feladat
 a=int(input("írj egy számot 0-tól 6-ig: "))

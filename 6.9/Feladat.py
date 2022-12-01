@@ -14,27 +14,25 @@ def abszolut_ertek(n):
         return n
 
 #1. Feladat
-n=input("írj egy égtáj rövídítést: ")
-def fordulj_orajarasi_iranyba(n):
-    if n=="É":
+n=input("Írj be egy égtáj rövidítését: ")
+def fordulj_orajarasi_iranyba(ég):
+    if ég=="É":
         print("K")
-        return n
-    elif n=="Ny":
+        return ég
+    elif ég=="Ny":
         print("É")
-        return n
-    elif n=="D":
+        return ég
+    elif ég=="D":
         print("Ny")
-        return n
-    elif n=="K":
+        return ég
+    elif ég=="K":
         print("D")
-        return n
-    elif n!="K" or "É" or "Ny" or "D":
-        teszt(fordulj_orajarasi_iranyba(42) == None)
-        return n
-    elif n!="K" or "É" or "Ny" or "D":
-        teszt(fordulj_orajarasi_iranyba(n) == None)
-        return n
-teszt(fordulj_orajarasi_iranyba(n) == n)
+        return ég
+    elif ég==int:
+        teszt(fordulj_orajarasi_iranyba(ég) == None)
+        return ég
+teszt(fordulj_orajarasi_iranyba(n) == n) 
+teszt(fordulj_orajarasi_iranyba(n) != n)
 
 
 #2. Feladat
@@ -42,24 +40,31 @@ a=int(input("írj egy számot 0-tól 6-ig: "))
 def nap_nev(a):
     if a==0:
         a="Hétfő"
+        print("A Hétfőt választottad")
         return a
     elif a==1:
         a="Kedd"
+        print("A Keddet választottad")
         return a
     elif a==2:
         a="Szerda"
+        print("A Szerdát választottad")
         return a
     elif a==3:
         a="Csütörtök"
+        print("A Csütörtököt választottad")
         return a
     elif a==4:
         a="Péntek"
+        print("A Pénteket választottad")
         return a
     elif a==5:
         a="Szombat"
+        print("A Szombatot választottad")
         return a
     elif a==6:
         a="Vasárnap"
+        print("A Vasárnapot választottad")
         return a
 if a==0:
     teszt(nap_nev(a) == "Hétfő")

@@ -29,9 +29,8 @@ def fordulj_orajarasi_iranyba(ég):
         print("D")
         return ég
     elif ég==int:
-        ég == None
-if 
-teszt(fordulj_orajarasi_iranyba(n) == n)
+        ég==None
+teszt(fordulj_orajarasi_iranyba(n) == n or fordulj_orajarasi_iranyba(n) != n)
 
 #2. Feladat
 a=int(input("írj egy számot 0-tól 6-ig: "))
@@ -80,3 +79,49 @@ elif a==6:
     teszt(nap_nev(a) == "Vasárnap")
 elif a>6:
     teszt(nap_nev(a) == None)
+
+#3. Feladat
+a=input("írd be a hét egyik napját: ")
+def nap_sorszám(nap):
+    if nap=="hétfő" or "Hétfő":
+        nap=0
+        print("A Hétfőt választottad")
+        return nap
+    elif nap=="kedd" or "Kedd":
+        nap=1
+        print("A Keddet választottad")
+        return nap
+    elif nap=="szerda" or "Szerda":
+        nap=2
+        print("A Szerdát választottad")
+        return nap
+    elif nap=="csütörtök" or "Csütörtök":
+        nap=3
+        print("A Csütörtököt választottad")
+        return nap
+    elif nap=="péntek" or "Péntek":
+        nap=4
+        print("A Pénteket választottad")
+        return nap
+    elif nap=="szombat" or "Szombat":
+        nap=5
+        print("A Szombatot választottad")
+        return nap
+    elif nap=="vasárnap" or "Vasárnap":
+        nap=6
+        print("A Vasárnapot választottad")
+        return nap
+if a=="hétfő" or "Hétfő":
+    teszt(nap_sorszám(a) == 0)
+elif a=="kedd" or "Kedd":
+    teszt(nap_sorszám(a) == 1)
+elif a=="szerda" or "Szerda":
+    teszt(nap_sorszám(a) == 2)
+elif a=="csütörtök" or "Csütörtök":
+    teszt(nap_sorszám(a) == 3)
+elif a=="péntek" or "Péntek":
+    teszt(nap_sorszám(a) == 4)
+elif a=="szombat" or "Szombat":
+    teszt(nap_sorszám(a) == 5)
+elif a=="vasárnap" or "Vasárnap":
+    teszt(nap_sorszám(a) == 6)

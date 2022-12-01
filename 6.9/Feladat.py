@@ -17,16 +17,16 @@ def abszolut_ertek(n):
 n=input("Írj be egy égtáj rövidítését: ")
 def fordulj_orajarasi_iranyba(ég):
     if ég=="É":
-        print("K")
+        print("Szomszédos égtája: K")
         return ég
     elif ég=="Ny":
-        print("É")
+        print("Szomszédos égtája: É")
         return ég
     elif ég=="D":
-        print("Ny")
+        print("Szomszédos égtája: Ny")
         return ég
     elif ég=="K":
-        print("D")
+        print("Szomszédos égtája: D")
         return ég
     elif ég==int:
         ég==None
@@ -83,45 +83,47 @@ elif a>6:
 #3. Feladat
 a=input("írd be a hét egyik napját: ")
 def nap_sorszám(nap):
-    if nap=="hétfő" or "Hétfő":
+    if nap=="Hétfő":
         nap=0
-        print("A Hétfőt választottad")
+        print("Sorszáma:" ,nap)
         return nap
-    elif nap=="kedd" or "Kedd":
+    elif nap=="Kedd":
         nap=1
-        print("A Keddet választottad")
+        print("Sorszáma:" ,nap)
         return nap
-    elif nap=="szerda" or "Szerda":
+    elif nap=="Szerda":
         nap=2
-        print("A Szerdát választottad")
+        print("Sorszáma:" ,nap)
         return nap
-    elif nap=="csütörtök" or "Csütörtök":
+    elif nap=="Csütörtök":
         nap=3
-        print("A Csütörtököt választottad")
+        print("Sorszáma" ,nap)
         return nap
-    elif nap=="péntek" or "Péntek":
+    elif nap=="Péntek":
         nap=4
-        print("A Pénteket választottad")
+        print("Sorszáma:" ,nap)
         return nap
-    elif nap=="szombat" or "Szombat":
+    elif nap=="Szombat":
         nap=5
-        print("A Szombatot választottad")
+        print("Sorszáma:" ,nap)
         return nap
-    elif nap=="vasárnap" or "Vasárnap":
+    elif nap=="Vasárnap":
         nap=6
-        print("A Vasárnapot választottad")
+        print("Sorszáma:" ,nap)
         return nap
-if a=="hétfő" or "Hétfő":
+if a=="Hétfő":
     teszt(nap_sorszám(a) == 0)
-elif a=="kedd" or "Kedd":
+elif a=="Kedd":
     teszt(nap_sorszám(a) == 1)
-elif a=="szerda" or "Szerda":
+elif a=="Szerda":
     teszt(nap_sorszám(a) == 2)
-elif a=="csütörtök" or "Csütörtök":
+elif a=="Csütörtök":
     teszt(nap_sorszám(a) == 3)
-elif a=="péntek" or "Péntek":
+elif a=="Péntek":
     teszt(nap_sorszám(a) == 4)
-elif a=="szombat" or "Szombat":
+elif a=="Szombat":
     teszt(nap_sorszám(a) == 5)
-elif a=="vasárnap" or "Vasárnap":
+elif a=="Vasárnap":
     teszt(nap_sorszám(a) == 6)
+elif a==int:
+    teszt(nap_sorszám(nap_nev(a)) == a)

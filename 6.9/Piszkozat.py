@@ -7,21 +7,17 @@ def teszt(sikeres_teszt):
         msg = ("A(z){0}. sorban álló teszt SIKERTELEN.".format(sorszam))
     print(msg)
 
-q=int(input("Órára váltáshoz, add meg a másodpercet: "))
-ú=0
-ó=0
-ű=0
-k=0
-p=0
-def orakra_valtas(q):
-    ú=q/3600
-    print(int(ú))
-ó=q%3600
-print(int(ó))
-teszt(orakra_valtas(q) == ú)
-def percekre_valtas(ó):
-    ű=ó/60
-    print(int(ű))
-k=ű%60
-print(int(k))
-teszt(percekre_valtas(ó) == ű)
+x1=int(input("Első szám: "))
+y1=int(input("Második szám: "))
+x2=int(input("Harmadik szám: "))
+y2=int(input("Negyedik szám: "))
+r=0
+def meredekseg(y1,y2,x1,x2):
+    r=(y2-y1)/(x2-x1)
+    if r<0:
+        return None
+    print(r)
+    return 0
+if r<0:
+    teszt(meredekseg(y1,y2,x1,x2)==None)
+teszt(meredekseg(y1,y2,x1,x2)==r)

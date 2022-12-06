@@ -328,15 +328,64 @@ teszt(masodpercre_valtas(a, b, c) == x)
 print("9. Feladat")
 q=int(input("Órára váltáshoz, add meg a másodpercet: "))
 ú=0
+ó=0
+ű=0
+k=0
+p=0
 def orakra_valtas(q):
     ú=q/3600
-    print(int(ú))
+    print(int(ú), "óra")
     return 0
+ó=q%3600
 teszt(orakra_valtas(q) == ú)
-ő=int(input("Percre váltáshoz, add meg a másodpercet: "))
-ó=0
-def percekre_valtas(ő):
-    ó=ő/60
-    print(int(ó))
+def percekre_valtas(ó):
+    ű=ó/60
+    print(int(ű), "perc")
     return 0
-teszt(percekre_valtas(ő) == ó)
+teszt(percekre_valtas(ó) == ű)
+def masodpercekre_valtas(ó):
+    k=ó%60
+    print(int(k), "másodperc")
+    return 0
+teszt(masodpercekre_valtas(ó) == k)
+
+#10. Feladat
+#teszt(3 % 4 == 0): Azért sikertelen mert nincs maradék
+#teszt(3 % 4 == 3): Ez sikeres
+#teszt(3 / 4 == 0): Azért sikertelen mert az érték 0.75
+#teszt(3 // 4 == 0): Ez sikeres
+#teszt(3+4*2 == 14): Azért sikertelen mert az érték nem egyenlő 14-el
+#teszt(4-2+2 == 0): Azért sikertelen mert az érték nem egyenlő 0-val
+#teszt(len("helló, világ!") == 13): Ez sikeres
+
+#11. Feladat
+print("11. Feladat")
+a=int(input("írj be egy számot: "))
+b=int(input("írj be egy másik számot: "))
+def osszehasonlitas(a,b):
+    if a>b:
+        return 1
+    elif a==b:
+        return 0
+    elif a<b:
+        return -1
+if a>b:
+    teszt(osszehasonlitas(a, b) == 1)
+elif a==b:
+    teszt(osszehasonlitas(a, b) == 0)
+elif a<b:
+    teszt(osszehasonlitas(a, b) == -1)
+
+#12. Feladat
+print("12. Feladat")
+a=int(input("írd be a befogót!"))
+b=int(input("írd be a másik befogót!"))
+c=0
+def atfogo(u,p):
+    c=a**2+b**2
+    print(c**0.5)
+    return 0
+teszt(atfogo(a, b) == c)
+
+#13. Feladat
+print("13. Feladat")

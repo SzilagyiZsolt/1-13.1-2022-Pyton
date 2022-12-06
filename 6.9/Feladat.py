@@ -326,3 +326,17 @@ teszt(masodpercre_valtas(a, b, c) == x)
 
 #9. Feladat
 print("9. Feladat")
+q=int(input("Órára váltáshoz, add meg a másodpercet: "))
+ú=0
+def orakra_valtas(q):
+    ú=q/3600
+    print(int(ú))
+    return 0
+teszt(orakra_valtas(q) == ú)
+ő=int(input("Percre váltáshoz, add meg a másodpercet: "))
+ó=0
+def percekre_valtas(ő):
+    ó=ő/60
+    print(int(ó))
+    return 0
+teszt(percekre_valtas(ő) == ó)

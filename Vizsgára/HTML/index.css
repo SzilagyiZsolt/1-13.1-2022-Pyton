@@ -1,0 +1,51 @@
+a {
+    color: #C0C0C0;
+}
+a:visited {
+    color: #C0C0C0;
+}
+a:active {
+    color: #C0C0C0;
+}
+a:hover {
+    color: #C0C0C0;
+}
+body{
+    background-image:url(hatter.png);
+    color: #000000;
+    background-color: #000000;
+}
+.d1{
+    width: 120px;
+}
+.d2{
+    background-color: #ffffff;
+}
+.tábla{
+    text-align: left;
+    width: 1000px;
+    border-spacing: 0px;
+    padding: 15px;
+}
+.tábla2{
+    border-spacing: 0px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+tr, th, td{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.közép{
+    text-align: center;
+}
+.fekete{
+    background-color: #000000;
+    color: #ffffff;
+}
+p{
+    text-align: justify;
+}

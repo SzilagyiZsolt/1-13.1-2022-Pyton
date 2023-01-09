@@ -1,6 +1,6 @@
 from random import randint
 from emberek_alap import Ember
-r=None
+T=[]
 for x in range(3):
     a=input("Add meg a nevet!")
     b=input("Add meg a foglalkozást!")
@@ -10,9 +10,6 @@ for x in range(3):
         c="férfi"
     elif c=="n":
         c="nő"
-    e=Ember(a,b,c)
-    print(f"{e.getNEV()} {e.getNEM()}, {e.getFOG()}, szerencse száma a {szam}")
-    
-
-
-
+    T.append(Ember(a,b,c,szam))
+for i in range(3):
+    print(f"{T[i].getNEV()} {T[i].getNEM()}, {T[i].getFOG()}, szerencse száma a {T[i].getSZAM()}")

@@ -1,8 +1,11 @@
 class Ember():
-    def __init__(self, nev, foglalkozas, nem):
+    def __init__(self, nev, foglalkozas, nem, szam):
         self.nev = nev
         self.foglalkozas = foglalkozas
         self.nem = nem
+        self.szam=szam
+    def setSZAM(self, szam):
+        self.szam=szam
     def setNEV(self, nev):
         self.nev=nev
     def setNEM(self, nem):
@@ -15,4 +18,6 @@ class Ember():
         return self.nem
     def getFOG(self):
         return self.foglalkozas
+    def getSZAM(self):
+        return self.szam
 

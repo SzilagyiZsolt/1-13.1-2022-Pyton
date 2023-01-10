@@ -1,12 +1,17 @@
 from classes import Menetlevél
-v=None
+r=open("fogyasztas.txt", "r")
 T=[]
-def fogyasztás(v):
-        a=input("Rendszám: ")
-        b=input("Megtett km: ")
-        c=input("Összes üzemanyag fogyasztás: ")
-        T.append(a)
+
+for line in r:
+        a=line.split(";")
+        b=Menetlevél(a[0])
+        b.setMEG(int(a[1]))
+        b.setFOGY(float(a[2][0:len(a[2])-2]))
         T.append(b)
-        T.append(c)
-fogyasztás(v)
-print(T)
+r.close()
+
+r=open("atlagfogyasztas.txt", "w")
+for a in b:
+        r.write(f"{a.getREND()},{a.atlagfogyasztas()}\n")
+        print(f"{a.getREND()},{a.atlagfogyasztas()}\n")
+r.close()

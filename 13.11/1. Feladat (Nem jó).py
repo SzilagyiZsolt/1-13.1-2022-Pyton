@@ -1,0 +1,7 @@
+szavak = open("izék.txt", "w", encoding="utf-8")
+szavak.write("egy, kettő, három, négy")
+szavak.close()
+szók=open("izék.txt", "r", encoding="utf-8")
+a=szók.readline()
+print(a)
+szók.close()

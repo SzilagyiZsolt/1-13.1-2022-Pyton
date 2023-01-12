@@ -18,4 +18,3 @@ m1=mel[random.randint(0,len(mel)-1)]
 m2=mel[random.randint(0,len(mel)-1)]
 mg=mgh[random.randint(0,len(mgh)-1)]
 print(m1,nev,ig,m2,hely)
-print(ig)

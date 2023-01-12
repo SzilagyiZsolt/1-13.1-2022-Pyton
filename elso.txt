@@ -1,0 +1,3 @@
+Az első Python fájlom!
+----------------------
+Helló, világ!

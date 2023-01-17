@@ -5,3 +5,7 @@ szók=open("izék.txt", "r", encoding="utf-8")
 a=szók.readline()
 print(a)
 szók.close()
+for line in reversed(list(open("izék.txt", encoding="utf-8"))):
+    words = line.split()
+    reversed_words = ' '.join(reversed(words))
+    print(reversed_words)
